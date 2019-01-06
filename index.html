@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Patrick Korianski</title>
+  </head>
+
+<div class="container">
+<br>
+  <div>
+  <a id="name_logo"href="index.html"><h2>PATRICK M. KORIANSKI</h2></a>
+
+  <ul class="nav nav-pills justify-content-end">
+    <li class="active"><a href="index.html"> <p class="leftBracket"> { </p> <p class="navPill-active">HOME</p> <p class="rightBracket">}</p></a></li>
+    <li><a href="projects.html"> <p class="leftBracket"> { </p> <p class="navPill">PROJECTS</p> <p class="rightBracket">}</p></a></li>
+    <li><a href="contact.html"> <p class="leftBracket"> { </p> <p class="navPill">CONTACT</p> <p class="rightBracket">}</p></a></li>
+  </ul>
+  </div>
+  <hr>
+  <br>
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" id="whoAmICard" style="">
+          <div style="background-color: black">
+          <img class="card-img-top rounded-circle" id="myPhoto" src="photos/cartoon_me.png" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Who am I?</h4>
+            <p class="card-text">Computer Science fellow coding ERP systems and implementing AI to help save the world .</p>
+            <br>
+            <div id="socialMediaButtons">
+              <a href="https://www.facebook.com/pkorianski" class="fa fa-facebook rounded-circle" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/pmkorianski/" class="fa fa-linkedin rounded-circle" target="_blank"></a>
+              <a href="https://twitter.com/patkorianski" class="fa fa-twitter rounded-circle" target="_blank"></a>
+              <a href="mailto:pkorianski.engr@gmail.com" class="fa fa-google rounded-circle" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-8">
+        <div class="card" id="navCard">
+          <div class="card-body">
+            <ul class="nav nav-tabs" id="tabs">
+              <li class="nav-item">
+                <a id="eduLink"class="nav-link active tabs" href="#" onclick="openTab('educationDiv','eduLink')">EDUCATION</a>
+              </li>
+              <li class="nav-item">
+                <a id="jobsLink"class="nav-link tabs" href="#" onclick="openTab('jobsDiv','jobsLink')">JOBS</a>
+              </li>
+              <li class="nav-item">
+                <a id="certLink" class="nav-link tabs" href="javascript:openTab('certDiv','certLink')">CERTS</a>
+              </li>
+              <li class="nav-item">
+                <a id="skillsLink" class="nav-link tabs" href="javascript:openTab('skillsDiv','skillsLink')">SKILLS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" id="normalInfoCard">
+          <div class="card-body">
+
+            <div class="tabClick" id="educationDiv">
+
+              <u><h5>Bachelor's Degree :</h5></u>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/uconn.png" alt="UConn Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="https://uconn.edu/" target="_blank"><b>University of Connecticut</b></a>
+                                   <br>
+                                   <i>B.S.</i>, Computer Science, May '17
+                                   <br>
+                                   <i>Minor:</i> Engineering Management
+              </p>
+              </div>
+              <br><br>
+
+              <u><h5>Associate's Degree :</h5></u>
+              <div style="display:inline-block;vertical-align:top;">
+              <img src="photos/ncc.jpeg" alt="NCC Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="https://www.nashuacc.edu/" target="_blank"><b>Nashua Community College</b></a>
+                                   <br>
+                                   <i>Associate in Arts</i>, Liberal Arts, May '14
+                                   <br>
+                                   <i>Awards:</i> Cum Laude Honors, Vice President's List
+              </p>
+              </div>
+            </div>
+
+            <div class="tabClick" id="jobsDiv" style="display:none">
+
+              <!-- Current Jobs -->
+              <u><h5>Current :</h5></u>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/osram_logo.jpg" alt="OSRAM Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="https://www.osram.com/index-2.jsp" target="_blank"><b>IT Process & Apps Analyst</b></a>
+                                   <br>
+                                   OSRAM
+                                   <br>
+                                   <i style="font-size: 15px">July 2017 – Present</i>
+              </p>
+              </div>
+              <br><br>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/dj_logo.jpg" alt="DJ Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="http://djkorianski.wixsite.com/services" target="_blank"><b>Owner & Disc Jockey</b></a>
+                                   <br>
+                                   Korianski Entertainment
+                                   <br>
+                                   <i style="font-size: 15px">Dec 2015 – Present</i>
+              </p>
+              </div>
+              <br><br>
+              <!-- Past Jobs / Internships -->
+              <u><h5>Past :</h5></u>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/uconn.png" alt="UConn Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="https://sait.uconn.edu/" target="_blank"><b>Computer Technician</b></a>
+                                   <br>
+                                   Student Affairs IT @ UConn
+                                   <br>
+                                   <i style="font-size: 15px">Sept 2014 – May 2017</i>
+              </p>
+              </div>
+              <br><br>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/elbit_logo.jpeg" alt="Elbit Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="http://www.elbitsystems-us.com/" target="_blank"><b>IT Intern</b></a>
+                                   <br>
+                                   Elbit Systems of America
+                                   <br>
+                                   <i style="font-size: 15px">May 2016 – Aug 2016</i>
+              </p>
+              </div>
+              <br><br>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/ch_logo.png" alt="Course Hero Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="https://www.coursehero.com/" target="_blank"><b>Business Development Intern</b></a>
+                                   <br>
+                                   Course Hero
+                                   <br>
+                                   <i style="font-size: 15px">Feb 2016 – Dec 2016</i>
+              </p>
+              </div>
+              <br><br>
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="photos/nsd_logo.jpg" alt="Nashua Schoo District Logo" height="40" width="40">
+              </div>
+              <div style="display:inline-block;padding-left:20px;">
+              <p class="card-text"><a href="http://www.nashua.edu/" target="_blank"><b>IT Intern</b></a>
+                                   <br>
+                                   Nashua School District
+                                   <br>
+                                   <i style="font-size: 15px">Jun 2015 – Aug 2015</i>
+              </p>
+              </div>
+            </div>
+
+            <div class="tabClick" id="certDiv" style="display:none">
+
+              <u><h5>Mobile App Development :</h2></u>
+              <ul class="list-unstyled">
+                <li class="certList"><a href="https://www.linkedin.com/learning/paths/become-an-ios-11-app-developer" target="_blank">√  Become an iOS 11 App Developer</a>, <b>LinkedIn</b></li>
+              </ul>
+              <br>
+              <u><h5>Data Science :</h5></u>
+                <ul class="list-unstyled">
+                  <li class="certList"><a href="https://www.udemy.com/certificate/UC-PJ6CA6Z2/" target="_blank">√ Python for Data Science & ML Bootcamp</a>, <b>Udemy</b> </li>
+                  <li class="certList"><a href="https://www.datacamp.com/statement-of-accomplishment/course/6577e250921cbee7d038f665b5d760fcfbc04e33" target="_blank">√ Intermediate Python for Data Science</a>, <b>DataCamp</b> </li>
+                  <li class="certList"><a href="https://www.datacamp.com/statement-of-accomplishment/course/96c3b8566438ead88d45edfc112572558681e8c6" target="_blank">√ Python Data Science Toolbox (Part 1)</a>, <b>DataCamp</b> </li>
+                  <li class="certList"><a href="https://www.datacamp.com/statement-of-accomplishment/course/6f125f6875ae602773310a7b2cf4c938bbb8c656" target="_blank">√ Python Data Science Toolbox (Part 2)</a>, <b>DataCamp</b> </li>
+                </ul>
+              <br>
+              <u><h5>SAP :</h5></u>
+                <ul class="list-unstyled">
+                  <li class="certList"><a href="https://open.sap.com/verify/xiren-benyt-vurel-vopav-getuv" target="_blank">√ Writing Testable Code for ABAP</a>, <b>openSAP</b></li>
+                </ul>
+              <br>
+              <u><h5>Other :</h5></u>
+                <ul class="list-unstyled">
+                  <li class="certList"><a href="https://www.startupschool.org/companies/1O1BS6tMhaQ4Tw" target="_blank">√ Startup School Entrepreneurship Certificate</a>, <b>Startup School</b></li>
+                  <li class="certList"><a href="https://career.uconn.edu/graduate-students/professional-development/" target="_blank">√ Certificate of Professional Development</a>, <b>UConn</b> </li>
+                </ul>
+            </div>
+
+            <div class="tabClick" id="skillsDiv" style="display:none">
+
+              <div class="skillbar clearfix " data-percent="75%">
+	               <div class="skillbar-title" style="background: #d35400;"><span>Python</span></div>
+	               <div class="skillbar-bar" style="background: #e67e22;"></div>
+	               <div class="skill-bar-percent">75%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="50%">
+	               <div class="skillbar-title" style="background: #2980b9;"><span>NumPy</span></div>
+	               <div class="skillbar-bar" style="background: #3498db;"></div>
+	               <div class="skill-bar-percent">50%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="55%">
+	               <div class="skillbar-title" style="background: #EFE2BA;"><span>Pandas</span></div>
+	               <div class="skillbar-bar" style="background: #EFE2BA;"></div>
+	               <div class="skill-bar-percent">55%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="30%">
+	               <div class="skillbar-title" style="background: #46465e;"><span>Scikit-Learn</span></div>
+	               <div class="skillbar-bar" style="background: #5a68a5;"></div>
+	               <div class="skill-bar-percent">30%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="80%">
+	               <div class="skillbar-title" style="background: #333333;"><span>SQL</span></div>
+	               <div class="skillbar-bar" style="background: #525252;"></div>
+	               <div class="skill-bar-percent">80%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="60%">
+	               <div class="skillbar-title" style="background: #27ae60;"><span>Swift (iOS)</span></div>
+	               <div class="skillbar-bar" style="background: #2ecc71;"></div>
+	               <div class="skill-bar-percent">60%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="60%">
+	               <div class="skillbar-title" style="background: #124e8c;"><span>HTML</span></div>
+	               <div class="skillbar-bar" style="background: #4288d0;"></div>
+	               <div class="skill-bar-percent">60%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="55%">
+	               <div class="skillbar-title" style="background: #f44340;"><span>CSS</span></div>
+	               <div class="skillbar-bar" style="background: #f44330;"></div>
+	               <div class="skill-bar-percent">55%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="60%">
+	               <div class="skillbar-title" style="background: #85DCB;"><span>ABAP</span></div>
+	               <div class="skillbar-bar" style="background: #85DCB;"></div>
+	               <div class="skill-bar-percent">60%</div>
+              </div> <!-- End Skill Bar -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><hr>
+    <!-- Footer -->
+    <footer>
+      <p><b>Last updated:</b> 06 January 2019</p>
+    </footer>
+    <hr>
+  </div>
+</div>
+
+<script>
+function openTab(tabName,linkID){
+  var i;
+  var x = document.getElementsByClassName("tabClick");
+  for (i=0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var y = document.getElementsByClassName("tabs");
+  for (i=0; i < y.length; i++) {
+    y[i].classList.remove("active")
+  }
+  document.getElementById(linkID).classList.add("active");
+  document.getElementById(tabName).style.display = "block";
+}
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},2000);
+	});
+});
+</script>
+
+</html>

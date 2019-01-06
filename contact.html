@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Patrick Korianski</title>
+  </head>
+
+<div class="container">
+<br>
+  <div>
+  <a id="name_logo"href="index.html"><h2>PATRICK M. KORIANSKI</h2></a>
+
+  <ul class="nav nav-pills justify-content-end">
+    <li><a href="index.html"> <p class="leftBracket"> { </p> <p class="navPill">HOME</p> <p class="rightBracket">}</p></a></li>
+    <li><a href="projects.html"> <p class="leftBracket"> { </p> <p class="navPill">PROJECTS</p> <p class="rightBracket">}</p></a></li>
+    <li class="active"><a href="contact.html"> <p class="leftBracket"> { </p> <p class="navPill-active">CONTACT</p> <p class="rightBracket">}</p></a></li>
+  </ul>
+  </div>
+
+  <hr>
+  <br>
+  <br>
+
+  <h3>Contact Form</h3>
+  <br>
+
+  <div class="container">
+    <form id="contactMeForm" action="mailto:pkorianski.engr@gmail.com?subject=Website%20Question" enctype="text/plain" method="post">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="First Name" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="Last Name" placeholder="Your last name..">
+
+      <label for="reason">Contact Reason</label>
+      <select id="reason" name="Contact Reason">
+        <option value="Job Opportunity">Job Opportunity</option>
+        <option value="Project Question">Project Question</option>
+        <option value="Programming Question">Programming Question</option>
+        <option value="DJ Inquiry">DJ Inquiry</option>
+        <option value="General">General</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="body">Message</label>
+      <textarea id="body" name="Body" placeholder="Write something.." style="height:100px"></textarea>
+
+      <input type="submit" id="contactMeButton" value="Submit"></a>
+    </form>
+  </div>
+  <br><br><br><hr>
+  <!-- Footer -->
+  <footer>
+    <p><b>Last updated:</b> 06 January 2019</p>
+  </footer>
+  <hr>
+</div>
+
+<script>
+function getSubject() {
+  return document.getElementById("subject").value;
+}
+
+$(document).ready(function() {
+    $('#contactMeButton').click(function() {
+        $('#contactMeForm').attr('action',
+                       'mailto:pkorianski.engr@gmail.com';
+        $('#contactMeForm').submit();
+    });
+});
+</script>
+
+</html>

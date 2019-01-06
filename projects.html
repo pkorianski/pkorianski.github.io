@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Patrick Korianski</title>
+  </head>
+
+<div class="container">
+<br>
+  <div>
+  <a id="name_logo"href="index.html"><h2>PATRICK M. KORIANSKI</h2></a>
+
+  <ul class="nav nav-pills justify-content-end">
+    <li><a href="index.html"> <p class="leftBracket"> { </p> <p class="navPill">HOME</p> <p class="rightBracket">}</p></a></li>
+    <li class="active"><a href="projects.html"> <p class="leftBracket"> { </p> <p class="navPill-active">PROJECTS</p> <p class="rightBracket">}</p></a></li>
+    <li><a href="contact.html"> <p class="leftBracket"> { </p> <p class="navPill">CONTACT</p> <p class="rightBracket">}</p></a></li>
+  </ul>
+  </div>
+  <hr>
+  <br>
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" id="whoAmICard" style="">
+          <div style="background-color: black">
+          <img class="card-img-top rounded-circle" id="myProject" src="photos/idea.png" alt="Card image" height="285">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Projects</h4>
+            <p class="card-text"><i>"Let's go invent tomorrow rather than worrying about what happened yesterday" - Steve Jobs</i></p>
+            <br>
+            <div id="socialMediaButtons">
+              <a href="https://www.facebook.com/pkorianski" class="fa fa-facebook rounded-circle"></a>
+              <a href="https://www.linkedin.com/in/pmkorianski/" class="fa fa-linkedin rounded-circle"></a>
+              <a href="https://twitter.com/patkorianski" class="fa fa-twitter rounded-circle"></a>
+              <a href="mailto:pkorianski.engr@gmail.com" class="fa fa-google rounded-circle"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-8">
+        <div class="card" id="projectsNavCard">
+          <div class="card-body">
+            <ul class="nav nav-tabs" id="tabs">
+              <li class="nav-item">
+                <a id="currLink"class="nav-link active tabs" href="#" onclick="openTab('currDiv','currLink')">CURRENT</a>
+              </li>
+              <li class="nav-item">
+                <a id="pastLink"class="nav-link tabs" href="#" onclick="openTab('pastDiv','pastLink')">PAST</a>
+              </li>
+              <li class="nav-item">
+                <a id="futLink" class="nav-link tabs" href="javascript:openTab('futDiv','futLink')">FUTURE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" id="normalInfoCard">
+          <div class="card-body">
+            <div class="tabClick" id="currDiv">
+              <hr>
+              <p class="card-text"><a href="https://github.com/pkorianski/ChoseIt" target="_blank"><b>ChoseIt Mobile App</b></a>
+                                   <br>
+                                   <i style="font-size: 15px">October 2018 – Present</i>
+                                   <ul>
+                                     <li> Programming in Swift and Python to analyze restaurants, movies, dinner recipes, and more to help minimize your picking time </li>
+                                     <li> Utilizing the Yelp, Movie DB, Edamam’s Recipe Search, and other API’s </li>
+                                     <li> Designing a randomized choosing algorithm to help pick your top choices when trying to find a dinner recipe, movie, or restaurant</li>
+                                   </ul>
+              </p>
+              <p class="card-text"><b>Denovo Engineering Health Analysis AI Project</b>
+                                   <br>
+                                   <i style="font-size: 15px">June 2018 – Present</i>
+                                   <ul>
+                                     <li> Responsible for creating and utilizing AI open-source software to help recognize health diseases</li>
+                                     <li> Utilizing Python and the libraries Tensorflow, NumPy, Pandas, scikit-learn, and Caffe to create a data model</li>
+                                     <li> Developed a simple web application using Flask, matplotlib, and HTML/CSS to display the health results and visualizations</li>
+                                   </ul>
+
+              </p>
+            </div>
+
+            <div class="tabClick" id="pastDiv" style="display:none">
+              <hr>
+              <p class="card-text"><a href="https://github.com/pkorianski/Python-AI-Job-Web-Scraper" target="_blank"><b>Python & AI Job Web-Scraper</b></a>
+                                   <br>
+                                   <i style="font-size: 15px">June 2018 – August 2018</i>
+                                   <ul>
+                                     <li> Utilized library BeautifulSoup to look at HTML/CSS code to find data regarding local Python & AI programming opportunities </li>
+                                     <li> Structured the web data into a CSV file for further analysis </li>
+                                     <li> Practiced using regular expressions, data structures (Dictionaries, Lists), and data cleansing</li>
+                                   </ul>
+              </p>
+              <p class="card-text"><a href="https://github.com/pkorianski/Medical-Management" target="_blank"><b>Medical Management</b></a>
+                                   <br>
+                                   <i style="font-size: 15px">Oct 2018 – Nov 2018</i>
+                                   <ul>
+                                     <li> Programming Challenge to create a Medical patient and medication management platform </li>
+                                     <li> Utilized HTML and CSS for the front-end development </li>
+                                     <li> Utilized Python and Flask for the API development</li>
+                                   </ul>
+              </p>
+              <p class="card-text"><a href="https://github.com/gborges0727/PlantPal" target="_blank"><b>PlantPal: Object Recognition Mobile Application</b></a>
+                                   <br>
+                                   <i style="font-size: 15px">Sept 2016 – August 2017</i>
+                                   <ul>
+                                     <li> Used Agile methodologies to design an iOS mobile app that recognizes wild plants and their characteristics</li>
+                                     <li> Developed the Python image recognition scripts which recognized up-to 25 plants at 95% accuracy</li>
+                                     <li> Designed the GUI for the iOS mobile application which involved designing a feed</li>
+                                   </ul>
+
+              </p>
+
+            </div>
+
+            <div class="tabClick" id="futDiv" style="display:none">
+              <hr>
+              <p class="card-text"><b>DJ Virtual Platform</b>
+                                   <br>
+                                   <i style="font-size: 15px">Present</i>
+                                   <ul>
+                                     <li> Allow a DJ to perform gigs world-wide from a platform </li>
+                                     <li> Three way benefits for consumers, venues, DJ's</li>
+                                     <li> Development beginning 2019</li>
+                                   </ul>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><hr>
+    <!-- Footer -->
+    <footer>
+      <p><b>Last updated:</b> 06 January 2019</p>
+    </footer>
+    <hr>
+  </div>
+</div>
+
+<script>
+function openTab(tabName,linkID){
+  var i;
+  var x = document.getElementsByClassName("tabClick");
+  for (i=0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var y = document.getElementsByClassName("tabs");
+  for (i=0; i < y.length; i++) {
+    y[i].classList.remove("active")
+  }
+  document.getElementById(linkID).classList.add("active");
+  document.getElementById(tabName).style.display = "block";
+}
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},2000);
+	});
+});
+</script>
+
+
+
+</html>
