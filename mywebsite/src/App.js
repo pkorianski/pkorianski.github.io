@@ -1,10 +1,9 @@
 import Blog from "./components/blog/blog.jsx";
 import HomeScreen from "./components/homescreen/home-screen.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    // <HomeScreen />
     <Router>
       <Routes>
         <Route path="/" element={<HomeScreen />} />
